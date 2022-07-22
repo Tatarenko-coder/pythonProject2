@@ -1,0 +1,26 @@
+{% extends "base_index.html" %}
+{% block title %}
+TD About
+{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<div class="about">
+    <h3>Мене звати Дмитро Татаренко,</h3>
+        <p>Мій перший дуже простий веб-сайт, був написаний на Django. Розроблений на Python
+        в якості учбового прикладу з використанням програми PyCharm.</p>
+    <h3>Навчання:</h3>
+    <p> - Закінчив Курс University of Michigan Спеціалізація Python for Everybody</p>
+    <p> - Вивчаю курс University of Michigan Спеціалізація Django for Everybody</p>
+    <div id="certificate">
+        <h3>Мої сертифікати:</h3>
+        <ul class="certificate">
+            <li><a href="https://coursera.org/share/394dc567b9e7af20c1e9078a43a63b9b">
+                <img src="{% static 'images/sert.png' %}"></a></li>
+        </ul>
+    </div>
+    <h3>Мої проекти <a href="{% url 'project' %}">Project</a></h3>
+</div>
+
+{% endblock %}

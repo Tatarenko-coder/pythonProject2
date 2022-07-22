@@ -1,0 +1,43 @@
+{% extends "base_index.html" %}
+{% load static %}
+{% block title %}TD Project {% endblock %}
+{% block content %}
+
+<div class="bd">
+    {% if projects %}
+        {% for el in projects %}
+
+    <h3>{{el.project }} </h3>
+        <p>{{ el.task_project }}
+        {% endfor %}
+    {% else %}
+    <p>Not projects</p>
+    {% endif%}
+</div>
+
+  <div class="containeri">
+
+            <h1>Project gallery</h1>
+            <div id="gallery">
+                <figure class="photo">
+                    <a href="static/images/home.png" title="Home"><img src="static/images/home.png" alt="Home" /></a>
+                    <figcaption>Home</figcaption>
+                </figure>
+                <figure class="photo">
+                    <a href="static/images/about.png" title="About"><img src="static/images/about.png" alt="About" /></a>
+                    <figcaption>About</figcaption>
+                </figure>
+                <figure class="photo">
+                    <a href="static/images/project.png" title="Project"><img src="static/images/project.png" alt="Project" /></a>
+                    <figcaption>Project</figcaption>
+                </figure>
+                <figure class="photo">
+                    <a href="static/images/contact.png" title="Contact"><img src="static/images/contact.png" alt="Contact" /></a>
+                    <figcaption>Contact</figcaption>
+                </figure>
+
+
+            </div>
+        </div>
+
+{% endblock %}

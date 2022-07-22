@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
+    /*--------- body----------- */
+body{
+    background-color: #20123a;
+    color: #fff;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+    font-family: 'Cinzel', serif;
+
+}
+    /*------- footer ---------*/
+footer {
+    text-align: center;
+    width: 100%;
+    bottom:0;
+
+}
+#footer-logos a img {
+    text-align: center;
+    width: 40px;
+    border: none;
+    opacity: 0.40;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25";
+    filter: alpha(opacity = 40);
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    }
+#footer-logos :hover img,
+#footer-logos :focus img {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60";
+    filter: alpha(opacity = 90);
+}
+    /* -------- header ----------*/
+* {
+    margin:0;
+    padding: 0;
+}
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.header {
+    background-color: #20123a;
+    width: 100%;
+    position: sticky;
+    top:0;
+
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+ul,li {
+    display: flex;
+}
+header a {
+
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px 18px;
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 12px;
+    border-radius: 14px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    }
+    .header a:hover,
+    .header a:focus {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+    /*------------- text -----------------------*/
+
+
+/*--------------------- section - content -------------------------------------*/
+.section {
+    width: auto;
+	max-width: 960px;
+	margin: 5% auto;
+    padding: 5%;
+    background: rgba(0, 0, 0, .2);
+}
+img{
+    width: 100%;
+}
+/*--------------------- section -- home -------------------------------------*/
+
+.png{
+    text-align: center;
+    margin:30px;
+    padding: 30px;
+}
+#png{
+    max-width: 200px;
+}
+/*--------------------- section -- about -------------------------------------*/
+.about{
+    text-align: center;
+    margin:0px auto;
+    padding:0 30px;
+}
+/*-------- selection - content - certificate -------------------------*/
+#certificate{
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+    ul.certificate li {
+        margin: 0 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        list-style: none;
+        }
+            ul.certificate li a img {
+                max-width: 250px;
+                -webkit-transition: -webkit-transition 0.2s ease-in-out;
+                -moz-transition: -moz-transition 0.2s ease-in-out;
+                transition: transition 0.2s ease-in-out;
+                }
+                    ul.certificate :hover img {
+                        -webkit-transform: scale(1.4);
+                        -moz-transform: scale(1.4);
+                        -o-transform: scale(1.4);
+                        transform: scale(1.4);
+                        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+                        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+                        -o-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+                        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+                    }
+
+/*--------------------- section -- project -------------------------------------*/
+/*---------------- section - content- gallery ------------*/
+.containeri{
+    text-align: center;
+    margin-top: 30px;
+}
+#gallery{
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding: 20px;
+    max-width: 900px;
+    border: 1px solid #ddd;
+}
+#gallery {
+    margin-bottom: auto;
+    margin-top: 0;
+}
+#gallery:after {
+   content: '';
+   display: block;
+   height: 0;
+   clear: both;
+}
+.photo {
+	float: left;
+    max-width: 50%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.photo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #eee;
+    box-sizing: border-box;
+    }
+
+.photo figcaption {
+    text-align: center;
+    margin-top: 10px;
+    list-style: none;
+}
